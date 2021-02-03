@@ -1,0 +1,242 @@
+/*
+ Theme name: Original Theme
+ Author: Artem Safonov
+ Description: This is original theme for my test-project
+ Version: 1.0
+ Tags: responsive, purple, bootstrap
+ */
+
+ body {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  background: #ffe0e9 !important;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #fff !important; }
+  a:hover {
+    text-decoration: none;
+    color: #ffe0e9 !important; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Dancing Script", cursive !important;
+  display: inline-block; }
+
+h6 {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700 !important; }
+
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0; }
+
+.btn {
+  background-color: #fff;
+  color: #ce5aff;
+  border: 3px solid #ce5aff !important;
+  border-radius: 25px !important;
+  width: 209px;
+  height: 50px;
+  font-size: 18px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.36px;
+  opacity: 1; }
+  .btn:hover {
+    color: #3f005a; }
+
+.brand-line {
+  width: 4em;
+  border-bottom: 2px solid #ce5aff;
+  margin-bottom: 10px; }
+
+.navbar {
+  background: rgba(0, 0, 0, 0.5) !important;
+  text-transform: uppercase;
+  height: 80px; }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      height: auto; } }
+  .navbar-toggler-icon {
+    color: #fff; }
+  .navbar .navbar-brand {
+    padding-left: 15%; }
+  .navbar .navbar-nav {
+    padding-top: 1.1em;
+    padding-left: 10em; }
+  .navbar form {
+    padding-left: 5em;
+    padding-top: 1em; }
+
+.project-home {
+  margin-top: 3em; }
+  @media screen and (max-width: 768px) {
+    .project-home {
+      margin-top: 1em; } }
+  .project-home article {
+    font-size: 18px; }
+  .project-home h1, .project-home article {
+    background-color: #fff;
+    padding: 8px;
+    overflow: hidden;
+    display: inline-block; }
+
+.project-about, .project-history, .contact-form, footer {
+  background-color: #fff;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.35);
+  margin-top: 10em; }
+  @media screen and (max-width: 768px) {
+    .project-about, .project-history, .contact-form, footer {
+      margin-top: 1em; } }
+
+.project-about {
+  padding-top: 3em;
+  padding-bottom: 2em; }
+  .project-about img {
+    width: 80%; }
+  .project-about article {
+    padding-top: 25px;
+    line-height: 2em;
+    padding-bottom: 25px; }
+  .project-about .brand-line {
+    margin-top: 1.5em; }
+
+.project-history {
+  padding: 50px 0 50px 0; }
+  .project-history p {
+    padding-top: 13px;
+    padding-left: 25px;
+    width: 85%; }
+  .project-history .history-item {
+    padding-top: 15px; }
+    .project-history .history-item img {
+      padding: 10px 0 10px 15px; }
+
+.history-head {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 30px;
+  padding-left: 25px;
+  margin-top: 15px;
+  position: relative; }
+  .history-head2 {
+    margin-right: 15px; }
+  .history-head3 {
+    margin-left: 15px; }
+
+.history-head1, .history-year1 {
+  background-color: #bd6b00; }
+
+.history-head2, .history-year2 {
+  background-color: #117600; }
+
+.history-head3, .history-year3 {
+  background-color: #7400bd; }
+
+.history-year {
+  border-radius: 50%;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  position: absolute; }
+  .history-year1, .history-year3 {
+    top: -20px;
+    right: -35px; }
+  .history-year2 {
+    top: -20px;
+    left: -50px; }
+
+.project-photobox {
+  margin-top: 10em;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 1em; }
+  .project-photobox .col-md-6 {
+    margin: 0;
+    padding: 0; }
+    .project-photobox .col-md-6 img {
+      width: 100%; }
+  .project-photobox .btn {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    opacity: 0; }
+
+.photobox-item {
+  position: relative; }
+  .photobox-item2 img {
+    height: 100%; }
+  .photobox-item:hover {
+    cursor: pointer; }
+    .photobox-item:hover .photobox-item-hover {
+      opacity: 0.7; }
+    .photobox-item:hover .btn {
+      opacity: 1; }
+
+.photobox-item-hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; }
+
+#map {
+  height: 350px; }
+
+.contact-form {
+  max-width: 1000px !important;
+  padding-bottom: 2em; }
+  .contact-form .brand-line {
+    margin-top: 3em; }
+    @media screen and (max-width: 768px) {
+      .contact-form .brand-line {
+        margin-top: 1em; } }
+  .contact-form input, .contact-form textarea {
+    border: none;
+    border-left: 2px solid #ce5aff;
+    background-color: #eeeeee; }
+  .contact-form input {
+    height: 50px;
+    padding-left: 8px; }
+  .contact-form .row {
+    margin-top: 20px; }
+  .contact-form_contacts {
+    background-color: #eeeeee;
+    margin: 15px 0 15px 0; }
+    @media screen and (max-width: 768px) {
+      .contact-form_contacts {
+        margin-top: 4em; } }
+    .contact-form_contacts span {
+      display: block; }
+    .contact-form_contacts h6 {
+      margin-bottom: 0; }
+
+.social-icons ul li {
+  display: inline-block;
+  margin-top: 1em;
+  padding-left: 1.5em; }
+.social-icons a {
+  color: #000 !important; }
+
+footer {
+  padding-top: 2em; }
+  footer a {
+    color: #000 !important; }
+  footer ul {
+    padding-left: 0 !important; }
+
+@media screen and (max-width: 768px) {
+  .footer-timing .brand-line {
+    margin-top: 1em; } }
+
+/*# sourceMappingURL=main.css.map */

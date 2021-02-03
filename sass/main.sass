@@ -1,0 +1,219 @@
+$font-primary: 'Open Sans', sans-serif
+$font-secondary: 'Dancing Script', cursive
+
+$border-color: #ce5aff
+$white-color: #fff
+$black-color: #000
+$bg-color: #ffe0e9
+
+
+body
+	font-family: $font-primary !important
+	font-weight: 400
+	font-size: 16px
+	color: $black-color
+	background: $bg-color !important
+	overflow-x: hidden
+	width: 100%
+	margin: 0
+	padding: 0
+a
+	color: $white-color !important
+	&:hover
+		text-decoration: none
+		color: $bg-color !important
+h1, h2, h3, h4, h5
+	font-family: $font-secondary !important
+	display: inline-block
+h6
+	font-family: $font-primary !important
+	font-weight: 700 !important
+ul li
+	text-decoration: none
+	list-style-type: none
+	margin: 0
+.btn
+	background-color: $white-color
+	color: $border-color
+	border: 3px solid $border-color !important
+	border-radius: 25px !important
+	width: 209px
+	height: 50px
+	font-size: 18px !important
+	font-weight: 700
+	text-transform: uppercase
+	letter-spacing: 0.36px
+	opacity: 1
+	&:hover
+		color: darken($border-color, 50%)
+.brand-line
+	width: 4em
+	border-bottom: 2px solid $border-color
+	margin-bottom: 10px
+.navbar
+	background: rgba($black-color, .5) !important
+	text-transform: uppercase
+	height: 80px
+	@media screen and(max-width: 768px)
+		height: auto
+	&-toggler-icon
+		color: $white-color
+	.navbar-brand
+		padding-left: 10em
+		@media screen and(max-width: 768px)
+		padding-left: 30%
+	.navbar-nav
+		padding-top: 1.1em
+		padding-left: 10em
+	form
+		padding-left: 5em
+		padding-top: 1em
+.project-home
+	margin-top: 3em
+	@media screen and(max-width: 768px)
+		margin-top: 1em
+	article
+		font-size: 18px
+	h1, article
+		background-color: $white-color
+		padding: 8px
+		overflow: hidden
+		display: inline-block
+.project-about, .project-history, .contact-form, footer
+	background-color: $white-color
+	box-shadow: 5px 0 20px rgba(0, 0, 0, 0.35)
+	margin-top: 10em
+	@media screen and(max-width: 768px)
+		margin-top: 1em
+.project-about
+	padding-top: 3em
+	padding-bottom: 2em
+	img
+		width: 80%
+	article
+		padding-top: 25px
+		line-height: 2em
+		padding-bottom: 25px
+	.brand-line
+		margin-top: 1.5em
+
+.project-history
+	padding: 50px 0 50px 0
+	p
+		padding-top: 13px
+		padding-left: 25px
+		width: 85%
+	.history-item
+		padding-top: 15px
+		img
+			padding: 10px 0 10px 15px
+.history-head
+	color: $white-color
+	font-size: 18px
+	font-weight: 700
+	height: 30px
+	padding-left: 25px
+	margin-top: 15px
+	position: relative
+	&2
+		margin-right: 15px
+	&3
+		margin-left: 15px
+.history-head1, .history-year1
+	background-color: #bd6b00
+.history-head2, .history-year2
+	background-color: #117600
+.history-head3, .history-year3
+	background-color: #7400bd
+.history-year
+	border-radius: 50%
+	color: $white-color
+	width: 70px
+	height: 70px
+	text-align: center
+	line-height: 70px
+	position: absolute
+	&1, &3
+		top: -20px
+		right: -35px
+	&2
+		top: -20px
+		left: -50px
+.project-photobox
+	margin-top: 10em
+	padding: 0
+	overflow: hidden
+	@media screen and(max-width: 768px)
+	margin-top: 1em
+	.col-md-6
+		margin: 0
+		padding: 0
+		img
+			width: 100%
+	.btn
+		position: absolute
+		top: 50%
+		left: 35%
+		opacity: 0
+.photobox-item
+	position: relative
+	&2 img
+		height: 100%
+	&:hover
+		cursor: pointer
+		.photobox-item-hover
+			opacity: .7
+		.btn
+			opacity: 1
+.photobox-item-hover
+	opacity: 0
+	position: absolute
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: $black-color
+#map
+	height: 350px
+.contact-form
+	max-width: 1000px !important
+	padding-bottom: 2em
+	.brand-line
+		margin-top: 3em
+		@media screen and(max-width: 768px)
+			margin-top: 1em
+	input, textarea
+		border: none
+		border-left: 2px solid $border-color
+		background-color: #eeeeee
+	input
+		height: 50px
+		padding-left: 8px
+	.row
+		margin-top: 20px
+	&_contacts
+		background-color: #eeeeee
+		margin: 15px 0 15px 0
+		@media screen and(max-width: 768px)
+			margin-top: 4em
+		span
+			display: block
+		h6
+			margin-bottom: 0
+.social-icons
+	ul li
+		display: inline-block
+		margin-top: 1em
+		padding-left: 1.5em
+	a
+		color: $black-color !important
+footer
+	padding-top: 2em
+	a
+		color: $black-color !important
+	ul
+		padding-left: 0 !important
+.footer-timing
+	.brand-line
+		@media screen and(max-width: 768px)
+			margin-top: 1em
+

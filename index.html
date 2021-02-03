@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>test project</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-md">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars fa-2x"></i></span>
+      </button>
+      <div class="collapse navbar-collapse nav-links align-items-center" id="navbarToggler">
+        <a href="#" class="navbar-brand">
+        <img src="images/logo.png" alt="logo" width="160" height="50">
+        </a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">History</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Products</a>
+          </li class="nav-item">
+          <li>
+            <a href="#" class="nav-link">Contact</a>
+          </li class="nav-item">
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn">Ask a question</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- Block 1 -->
+      <div class="row project-home">
+        <div class="col-md-5">
+          <h1>Marc Jacobs</h1>
+          <article>Daisy is a sparkly floral-woody fragrance, fresh and feminine at the same time. It is devoted to a sophisticated, seductive, and dazzling woman, which at the same time strives to simplicity.</article>
+        </div>
+      </div>
+      <!-- Block 2 -->
+      <div id="about-us" class="row project-about">
+        <div class="col-md-6"><img src="images/----1.jpg" alt=""></div>
+        <div class="col-md-6">
+          <div class="brand-line"></div>
+          <h2>Fragrance of you life</h2>
+          <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur atque dicta dignissimos eius et ex illo laboriosam molestias perferendis possimus recusandae reiciendis rem saepe sint temporibus, veniam veritatis vero voluptate voluptates? Aliquid autem, dolorum earum eum iste molestias officiis omnis possimus saepe tenetur. Alias at doloribus ducimus nobis odio?
+          </article>
+          <div class="btn project-about_btn">Read more</div>
+        </div>
+      </div>
+      <!-- Block 3 -->
+      <div id="our-history" class="row project-history">
+          <div class="col-md-6 align-self-start">
+            <div class="brand-line"></div>
+            <h2>Our history</h2><br>
+            <div class="history-head history-head1">History stage 1. Generation
+              <div class="history-year history-year1">1970</div>
+            </div>
+            <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio illum nesciunt, perspiciatis praesentium qui quos reprehenderit totam. Cumque dolorum fugiat perspiciatis quae ratione? Ab asperiores dolor obcaecati quaerat sed.</small>
+            </p>
+          </div>
+          <div class="col-md-6"></div>
+        <div class="row history-item">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 align-self-end">
+            <div class="history-head history-head2">History stage 2. Evolution
+              <div class="history-year history-year2">1980</div>
+            </div>
+            <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio illum nesciunt, perspiciatis praesentium qui quos reprehenderit totam. Cumque dolorum fugiat perspiciatis quae ratione? Ab asperiores dolor obcaecati quaerat sed.</small>
+              </p>
+          </div>
+        </div>
+        <div class="row history-item">
+          <div class="col-md-6 align-self-start">
+            <div class="history-head history-head3">History stage 3. Success
+              <div class="history-year history-year3">2000</div>
+            </div>
+            <img src="images/rose-petals-smaller.jpg" alt="">
+            <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur distinctio illum nesciunt, perspiciatis praesentium qui quos reprehenderit totam. Cumque dolorum fugiat perspiciatis quae ratione? Ab asperiores dolor obcaecati quaerat sed.</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Block 4 Photobox -->
+      <div class="row project-photobox">
+        <div class="col-md-6">
+          <div class="photobox-item">
+            <img src="images/coco-by-chanel.jpg" alt="">
+            <div class="photobox-item-hover"></div>
+            <div class="btn">Learn more</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row photobox-item photobox-item1">
+            <img src="images/perfume-bulgary.jpg" alt="">
+            <div class="photobox-item-hover"></div>
+            <div class="btn">Learn more</div>
+          </div>
+          <div class="row photobox-item photobox-item2">
+            <img src="images/parfum-logoval-sm.jpg" alt="">
+            <div class="photobox-item-hover"></div>
+            <div class="btn">Learn more</div>
+          </div>
+          
+        </div>
+      </div>
+    <!-- Block 5 Google map API -->
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 48.80720839, lng: 2.34900737};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <!--Block 6 Contact Form -->
+    <div class="container contact-form">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="brand-line"></div>
+          <h2>Contact with us</h2>
+        </div>
+          <div class="col-md-12">
+            <div class="row justify-content-around align-items-baseline">
+              <!-- Contact form -->
+              <div class="col-md-6">
+                <form action="#">
+                    <div class="row justify-content-around">
+                      <div class="col-md-5">
+                        <input type="text" id="fname" placeholder="First name">
+                      </div>
+                      <div class="col-md-5">
+                        <input type="text" id="lname" placeholder="Last name">
+                      </div>
+                    </div>
+                    <div class="row justify-content-around">
+                      <div class="col-md-5"><input type="text" id="email" placeholder="E-Mail address"></div>
+                      <div class="col-md-5"><input type="text" id="phone" placeholder="Phone number"></div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-md-11">
+                        <textarea name="message" id="message" cols="50" rows="6" placeholder="Type here your message"></textarea>
+                      </div>
+                    </div>
+                    <div class="row justify-content-end">
+                      <div class="col-md-6">
+                        <button class="btn" type="submit">Submit</button>
+                      </div>
+                    </div>
+                </form>
+              </div>
+              <div class="col-md-4 contact-form_contacts">
+                <p>
+                  <h6>Address</h6><br>
+                  <span>99 Barnard St Suite – Paris</span>
+                  <span>France</span>
+                </p>
+                <p>
+                  <h6>Phone</h6><br>
+                  <span>Local: 1800 200 300</span>
+                  <span>Mobile: 666 777 888</span>
+                </p>
+                <p>
+                  <h6>Email</h6><br>
+                  <span>needhelp@fragrance.com</span>
+                </p>
+                <p>
+                  <h6>Follow us</h6>
+                  <span class="social-icons">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-dribbble fa-2x"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                      </li>
+                    </ul>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="brand-line"></div>
+            <h3>Site navigation</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="brand-line"></div>
+            <h3>Gallery</h3><br>
+            <img src="images/d3751i80972h210439.png" alt="">
+            <img src="images/perfume-3-edited.png" alt="">
+            <img src="images/69752w.png" alt="">
+            <img src="images/versace-perfume-2013-collection.png" alt="">
+            <img src="images/perfume-7.png" alt="">
+            <img src="images/gduxcy7pfaqzfjji52a5--1-.png" alt="">
+          </div>
+          <div class="col-md-4 footer-timing">
+            <div class="brand-line"></div>
+            <h3>Timing</h3>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>MON – THUR</td>
+                  <td>10:00am – 12:00pm</td>
+                </tr>
+                <tr>
+                  <td>FRIDAY</td>
+                  <td>6:00pm – 8:00pm</td>
+                </tr>
+                <tr>
+                  <td>SATURDAY</td>
+                  <td>6:30pm – 9:30pm</td>
+                </tr>
+                <tr>
+                  <td>SUNDAY</td>
+                  <td>CLOSED</td>
+                </tr>
+              </tbody>                        
+            </table>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-QuUteDWDNOre5fXB4Am4QQKxWbiBTNI&callback=initMap" async defer>
+    </script>
+    
+  </body>
+</html>
